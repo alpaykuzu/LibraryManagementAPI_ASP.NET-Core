@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BookManagementAPI</name>
+    </assembly>
+    <members>
+        <member name="T:BookManagementAPI.Controllers.AuthorsController">
+            <summary>
+            Yazarlarla ilgili CRUD işlemlerini gerçekleştiren controller.
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.AuthorsController.GetAuthors">
+            <summary>
+            Tüm yazarları getir
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.AuthorsController.GetAuthor(System.Int32)">
+            <summary>
+            ID ile yazar getir
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.AuthorsController.PutAuthor(System.Int32,BookManagementAPI.DTOs.AuthorUpdateDto)">
+            <summary>
+            Yazar güncelle
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.AuthorsController.PostAuthor(BookManagementAPI.DTOs.AuthorCreateDto)">
+            <summary>
+            Yeni yazar ekle
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.AuthorsController.DeleteAuthor(System.Int32)">
+            <summary>
+            Yazar sil
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Controllers.BooksController">
+            <summary>
+            Kitaplarla ilgili CRUD işlemlerini gerçekleştiren controller.
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.BooksController.GetBooks">
+            <summary>
+            Tüm kitapları getir
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.BooksController.GetBook(System.Int32)">
+            <summary>
+            ID ile kitap getir
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.BooksController.PutBook(System.Int32,BookManagementAPI.DTOs.BookUpdateDto)">
+            <summary>
+            Kitap güncelle
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.BooksController.PostBook(BookManagementAPI.DTOs.BookCreateDto)">
+            <summary>
+            Yeni kitap ekle
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.BooksController.DeleteBook(System.Int32)">
+            <summary>
+            Kitap sil
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Controllers.CategoriesController">
+            <summary>
+            Kategorilerle ilgili CRUD işlemlerini gerçekleştiren controller.
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.CategoriesController.GetCategories">
+            <summary>
+            Tüm kategorileri getir
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.CategoriesController.GetCategory(System.Int32)">
+            <summary>
+            ID ile kategori getir
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.CategoriesController.PutCategory(System.Int32,BookManagementAPI.DTOs.CategoryUpdateDto)">
+            <summary>
+            Kategori güncelle
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.CategoriesController.PostCategory(BookManagementAPI.DTOs.CategoryCreateDto)">
+            <summary>
+            Yeni kategori ekle
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.CategoriesController.DeleteCategory(System.Int32)">
+            <summary>
+            Kategori sil
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Controllers.EnrollmentsController">
+            <summary>
+            Enrollment (Öğrenci-Kitap kaydı) işlemlerini yöneten controller.
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.EnrollmentsController.GetEnrollments">
+            <summary>
+            Tüm ödünç alma kayıtlarını getir
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.EnrollmentsController.GetEnrollment(System.Int32)">
+            <summary>
+            ID ile ödünç alma kaydı getir
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.EnrollmentsController.PutEnrollment(System.Int32,BookManagementAPI.DTOs.EnrollmentUpdateDto)">
+            <summary>
+            Ödünç alma kaydını güncelle (kitap iade durumu)
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.EnrollmentsController.PostEnrollment(BookManagementAPI.DTOs.EnrollmentCreateDto)">
+            <summary>
+            Yeni ödünç alma kaydı ekle
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.EnrollmentsController.DeleteEnrollment(System.Int32)">
+            <summary>
+            Ödünç alma kaydını sil
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Controllers.StudentsController">
+            <summary>
+            Öğrencilerle ilgili CRUD işlemlerini gerçekleştiren controller.
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.StudentsController.GetStudents">
+            <summary>
+            Tüm öğrencileri getir
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.StudentsController.GetStudent(System.Int32)">
+            <summary>
+            ID ile öğrenci getir
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.StudentsController.PutStudent(System.Int32,BookManagementAPI.DTOs.StudentUpdateDto)">
+            <summary>
+            Öğrenci güncelle
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.StudentsController.PostStudent(BookManagementAPI.DTOs.StudentCreateDto)">
+            <summary>
+            Yeni öğrenci ekle
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Controllers.StudentsController.DeleteStudent(System.Int32)">
+            <summary>
+            Öğrenci sil
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Data.LibraryDbContext">
+            <summary>
+            Veritabanı bağlantısı ve model yapılandırması için DbContext sınıfı
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Data.LibraryDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Entity ilişkilerini ve kurallarını yapılandırma
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Data.LibraryDbContext.SeedData(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Başlangıç test verileri ekleme
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Entities.Author">
+            <summary>
+            Yazar entity sınıfı
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Entities.Book">
+            <summary>
+            Kitap entity sınıfı
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Entities.Category">
+            <summary>
+            Kitap kategorisi entity sınıfı
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Entities.Enrollment">
+            <summary>
+            Ödünç alma/kaydolma işlemi entity sınıfı (Many-to-Many ilişkiyi sağlayan ara tablo)
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Entities.Student">
+            <summary>
+            Öğrenci entity sınıfı
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Extensions.ServiceCollectionExtensions">
+            <summary>
+            Dependency Injection için servis koleksiyonu genişletme sınıfı
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Extensions.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Repository bağımlılıklarını ekler
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Extensions.ServiceCollectionExtensions.AddServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Service bağımlılıklarını ekler
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Mapping.MappingProfile">
+            <summary>
+            Entity ve DTO'lar arasında dönüşüm için AutoMapper profili
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Migrations.AddRelationships">
+            <inheritdoc />
+        </member>
+        <member name="M:BookManagementAPI.Migrations.AddRelationships.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookManagementAPI.Migrations.AddRelationships.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BookManagementAPI.Migrations.AddRelationships.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:BookManagementAPI.Repositories.Implementations.AuthorRepository">
+            <summary>
+            Yazar repository implementasyonu
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Repositories.Implementations.BookRepository">
+            <summary>
+            Kitap repository implementasyonu
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Repositories.Implementations.CategoryRepository">
+            <summary>
+            Kategori repository implementasyonu
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Repositories.Implementations.EnrollmentRepository">
+            <summary>
+            Ödünç alma kaydı repository implementasyonu
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Repositories.Implementations.Repository`1">
+            <summary>
+            Genel repository implementasyonu
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Repositories.Implementations.StudentRepository">
+            <summary>
+            Öğrenci repository implementasyonu
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Repositories.Interfaces.IAuthorRepository">
+            <summary>
+            Yazar veri tabanı işlemleri için özel repository arayüzü
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Repositories.Interfaces.IBookRepository">
+            <summary>
+            Kitap veri tabanı işlemleri için özel repository arayüzü
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Repositories.Interfaces.ICategoryRepository">
+            <summary>
+            Kategori veri tabanı işlemleri için özel repository arayüzü
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Repositories.Interfaces.IEnrollmentRepository">
+            <summary>
+            Ödünç alma kaydı veri tabanı işlemleri için özel repository arayüzü
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Repositories.Interfaces.IRepository`1">
+            <summary>
+            Veri tabanı işlemleri için genel repository arayüzü
+            </summary>
+            <typeparam name="T">Entity tipi</typeparam>
+        </member>
+        <member name="T:BookManagementAPI.Repositories.Interfaces.IStudentRepository">
+            <summary>
+            Öğrenci veri tabanı işlemleri için özel repository arayüzü
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Services.Implementations.AuthorService">
+            <summary>
+            Yazar işlemleri için servis implementasyonu
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Services.Implementations.BookService">
+            <summary>
+            Kitap işlemleri için servis implementasyonu
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Services.Implementations.CategoryService">
+            <summary>
+            Kategori işlemleri için servis implementasyonu
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Services.Implementations.EnrollmentService">
+            <summary>
+            Ödünç alma kaydı işlemleri için servis implementasyonu
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Services.Implementations.StudentService">
+            <summary>
+            Öğrenci işlemleri için servis implementasyonu
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Services.Interfaces.IAuthorService">
+            <summary>
+            Yazar işlemleri için servis arayüzü
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Services.Interfaces.IBookService">
+            <summary>
+            Kitap işlemleri için servis arayüzü
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Services.Interfaces.ICategoryService">
+            <summary>
+            Kategori işlemleri için servis arayüzü
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Services.Interfaces.IEnrollmentService">
+            <summary>
+            Ödünç alma kaydı işlemleri için servis arayüzü
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.Services.Interfaces.IStudentService">
+            <summary>
+            Öğrenci işlemleri için servis arayüzü
+            </summary>
+        </member>
+    </members>
+</doc>
