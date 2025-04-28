@@ -25,8 +25,9 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Tüm kitapları getir
+        /// Tüm kitapları getir.
         /// </summary>
+        /// <returns>Tüm kitapların DTO listesi</returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<BookDto>>> GetBooks()
         {
@@ -35,8 +36,11 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// ID ile kitap getir
+        /// ID ile kitap getir.
         /// </summary>
+        /// <param name="id">Kitabın ID'si</param>
+        /// <returns>Kitabın DTO'su</returns>
+        /// <exception cref="KeyNotFoundException">Kitap bulunamadığında fırlatılır</exception>
         [HttpGet("{id}")]
         public async Task<ActionResult<BookDto>> GetBook(int id)
         {
@@ -52,8 +56,13 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Kitap güncelle
+        /// Kitap güncelle.
         /// </summary>
+        /// <param name="id">Güncellenecek kitabın ID'si</param>
+        /// <param name="bookDto">Kitap güncelleme DTO'su</param>
+        /// <returns>Güncelleme işlemine ait HTTP yanıtı</returns>
+        /// <exception cref="KeyNotFoundException">Kitap bulunamadığında fırlatılır</exception>
+        /// <exception cref="Exception">Diğer genel hatalar için fırlatılır</exception>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBook(int id, BookUpdateDto bookDto)
         {
@@ -77,8 +86,12 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Yeni kitap ekle
+        /// Yeni kitap ekle.
         /// </summary>
+        /// <param name="bookDto">Kitap oluşturma DTO'su</param>
+        /// <returns>Oluşturulan kitabın DTO'su</returns>
+        /// <exception cref="KeyNotFoundException">Kitapla ilgili hata durumlarında fırlatılır</exception>
+        /// <exception cref="Exception">Genel hata durumları için fırlatılır</exception>
         [HttpPost]
         public async Task<ActionResult<BookDto>> PostBook(BookCreateDto bookDto)
         {
@@ -98,8 +111,12 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Kitap sil
+        /// Kitap sil.
         /// </summary>
+        /// <param name="id">Silinecek kitabın ID'si</param>
+        /// <returns>Silme işlemine ait HTTP yanıtı</returns>
+        /// <exception cref="KeyNotFoundException">Kitap bulunamadığında fırlatılır</exception>
+        /// <exception cref="InvalidOperationException">Geçersiz işlem durumu (örneğin, ilişkili veri bulunması gibi) için fırlatılır</exception>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBook(int id)
         {

@@ -11,28 +11,44 @@
         </member>
         <member name="M:BookManagementAPI.Controllers.AuthorsController.GetAuthors">
             <summary>
-            Tüm yazarları getir
+            Tüm yazarları getir.
             </summary>
+            <returns>Tüm yazarların DTO listesi</returns>
         </member>
         <member name="M:BookManagementAPI.Controllers.AuthorsController.GetAuthor(System.Int32)">
             <summary>
-            ID ile yazar getir
+            ID ile yazar getir.
             </summary>
+            <param name="id">Yazarın ID'si</param>
+            <returns>Yazarın DTO'su</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Yazar bulunamadığında fırlatılır</exception>
         </member>
         <member name="M:BookManagementAPI.Controllers.AuthorsController.PutAuthor(System.Int32,BookManagementAPI.DTOs.AuthorUpdateDto)">
             <summary>
-            Yazar güncelle
+            Yazar güncelle.
             </summary>
+            <param name="id">Güncellenecek yazarın ID'si</param>
+            <param name="authorDto">Yazar güncelleme DTO'su</param>
+            <returns>Güncelleme işlemine ait HTTP yanıtı</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Yazar bulunamadığında fırlatılır</exception>
+            <exception cref="T:System.Exception">Diğer genel hatalar için fırlatılır</exception>
         </member>
         <member name="M:BookManagementAPI.Controllers.AuthorsController.PostAuthor(BookManagementAPI.DTOs.AuthorCreateDto)">
             <summary>
-            Yeni yazar ekle
+            Yeni yazar ekle.
             </summary>
+            <param name="authorDto">Yazar oluşturma DTO'su</param>
+            <returns>Oluşturulan yazarın DTO'su</returns>
+            <exception cref="T:System.Exception">Genel hata durumları için fırlatılır</exception>
         </member>
         <member name="M:BookManagementAPI.Controllers.AuthorsController.DeleteAuthor(System.Int32)">
             <summary>
-            Yazar sil
+            Yazar sil.
             </summary>
+            <param name="id">Silinecek yazarın ID'si</param>
+            <returns>Silme işlemine ait HTTP yanıtı</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Yazar bulunamadığında fırlatılır</exception>
+            <exception cref="T:System.InvalidOperationException">Geçersiz işlem durumları için fırlatılır</exception>
         </member>
         <member name="T:BookManagementAPI.Controllers.BooksController">
             <summary>
@@ -41,28 +57,45 @@
         </member>
         <member name="M:BookManagementAPI.Controllers.BooksController.GetBooks">
             <summary>
-            Tüm kitapları getir
+            Tüm kitapları getir.
             </summary>
+            <returns>Tüm kitapların DTO listesi</returns>
         </member>
         <member name="M:BookManagementAPI.Controllers.BooksController.GetBook(System.Int32)">
             <summary>
-            ID ile kitap getir
+            ID ile kitap getir.
             </summary>
+            <param name="id">Kitabın ID'si</param>
+            <returns>Kitabın DTO'su</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Kitap bulunamadığında fırlatılır</exception>
         </member>
         <member name="M:BookManagementAPI.Controllers.BooksController.PutBook(System.Int32,BookManagementAPI.DTOs.BookUpdateDto)">
             <summary>
-            Kitap güncelle
+            Kitap güncelle.
             </summary>
+            <param name="id">Güncellenecek kitabın ID'si</param>
+            <param name="bookDto">Kitap güncelleme DTO'su</param>
+            <returns>Güncelleme işlemine ait HTTP yanıtı</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Kitap bulunamadığında fırlatılır</exception>
+            <exception cref="T:System.Exception">Diğer genel hatalar için fırlatılır</exception>
         </member>
         <member name="M:BookManagementAPI.Controllers.BooksController.PostBook(BookManagementAPI.DTOs.BookCreateDto)">
             <summary>
-            Yeni kitap ekle
+            Yeni kitap ekle.
             </summary>
+            <param name="bookDto">Kitap oluşturma DTO'su</param>
+            <returns>Oluşturulan kitabın DTO'su</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Kitapla ilgili hata durumlarında fırlatılır</exception>
+            <exception cref="T:System.Exception">Genel hata durumları için fırlatılır</exception>
         </member>
         <member name="M:BookManagementAPI.Controllers.BooksController.DeleteBook(System.Int32)">
             <summary>
-            Kitap sil
+            Kitap sil.
             </summary>
+            <param name="id">Silinecek kitabın ID'si</param>
+            <returns>Silme işlemine ait HTTP yanıtı</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Kitap bulunamadığında fırlatılır</exception>
+            <exception cref="T:System.InvalidOperationException">Geçersiz işlem durumu (örneğin, ilişkili veri bulunması gibi) için fırlatılır</exception>
         </member>
         <member name="T:BookManagementAPI.Controllers.CategoriesController">
             <summary>
@@ -71,28 +104,44 @@
         </member>
         <member name="M:BookManagementAPI.Controllers.CategoriesController.GetCategories">
             <summary>
-            Tüm kategorileri getir
+            Tüm kategorileri getir.
             </summary>
+            <returns>Tüm kategorilerin DTO listesi</returns>
         </member>
         <member name="M:BookManagementAPI.Controllers.CategoriesController.GetCategory(System.Int32)">
             <summary>
-            ID ile kategori getir
+            ID ile kategori getir.
             </summary>
+            <param name="id">Kategorinin ID'si</param>
+            <returns>Kategori DTO'su</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Kategori bulunamadığında fırlatılır</exception>
         </member>
         <member name="M:BookManagementAPI.Controllers.CategoriesController.PutCategory(System.Int32,BookManagementAPI.DTOs.CategoryUpdateDto)">
             <summary>
-            Kategori güncelle
+            Kategori güncelle.
             </summary>
+            <param name="id">Güncellenecek kategorinin ID'si</param>
+            <param name="categoryDto">Kategori güncelleme DTO'su</param>
+            <returns>Güncelleme işlemine ait HTTP yanıtı</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Kategori bulunamadığında fırlatılır</exception>
+            <exception cref="T:System.Exception">Diğer genel hatalar için fırlatılır</exception>
         </member>
         <member name="M:BookManagementAPI.Controllers.CategoriesController.PostCategory(BookManagementAPI.DTOs.CategoryCreateDto)">
             <summary>
-            Yeni kategori ekle
+            Yeni kategori ekle.
             </summary>
+            <param name="categoryDto">Kategori oluşturma DTO'su</param>
+            <returns>Oluşturulan kategorinin DTO'su</returns>
+            <exception cref="T:System.Exception">Genel hata durumları için fırlatılır</exception>
         </member>
         <member name="M:BookManagementAPI.Controllers.CategoriesController.DeleteCategory(System.Int32)">
             <summary>
-            Kategori sil
+            Kategori sil.
             </summary>
+            <param name="id">Silinecek kategorinin ID'si</param>
+            <returns>Silme işlemine ait HTTP yanıtı</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Kategori bulunamadığında fırlatılır</exception>
+            <exception cref="T:System.InvalidOperationException">Geçersiz işlem durumu (örneğin, ilişkili veri bulunması gibi) için fırlatılır</exception>
         </member>
         <member name="T:BookManagementAPI.Controllers.EnrollmentsController">
             <summary>
@@ -101,28 +150,46 @@
         </member>
         <member name="M:BookManagementAPI.Controllers.EnrollmentsController.GetEnrollments">
             <summary>
-            Tüm ödünç alma kayıtlarını getir
+            Tüm ödünç alma kayıtlarını getir.
             </summary>
+            <returns>Ödünç alma kayıtlarının DTO listesi</returns>
         </member>
         <member name="M:BookManagementAPI.Controllers.EnrollmentsController.GetEnrollment(System.Int32)">
             <summary>
-            ID ile ödünç alma kaydı getir
+            ID ile ödünç alma kaydını getir.
             </summary>
+            <param name="id">Ödünç alma kaydının ID'si</param>
+            <returns>Ödünç alma kaydının DTO'su</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Ödünç alma kaydı bulunamadığında fırlatılır</exception>
         </member>
         <member name="M:BookManagementAPI.Controllers.EnrollmentsController.PutEnrollment(System.Int32,BookManagementAPI.DTOs.EnrollmentUpdateDto)">
             <summary>
-            Ödünç alma kaydını güncelle (kitap iade durumu)
+            Ödünç alma kaydını güncelle (kitap iade durumu).
             </summary>
+            <param name="id">Güncellenecek ödünç alma kaydının ID'si</param>
+            <param name="enrollmentDto">Ödünç alma kaydı güncelleme DTO'su</param>
+            <returns>Güncelleme işlemine ait HTTP yanıtı</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Ödünç alma kaydı bulunamadığında fırlatılır</exception>
+            <exception cref="T:System.Exception">Diğer genel hatalar için fırlatılır</exception>
         </member>
         <member name="M:BookManagementAPI.Controllers.EnrollmentsController.PostEnrollment(BookManagementAPI.DTOs.EnrollmentCreateDto)">
             <summary>
-            Yeni ödünç alma kaydı ekle
+            Yeni ödünç alma kaydı ekle.
             </summary>
+            <param name="enrollmentDto">Yeni ödünç alma kaydı DTO'su</param>
+            <returns>Yeni ödünç alma kaydının DTO'su</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Bağlantılı öğeler bulunamadığında fırlatılır</exception>
+            <exception cref="T:System.InvalidOperationException">Geçersiz işlem durumu (örneğin, zaten var olan bir kayıt ekleme) için fırlatılır</exception>
+            <exception cref="T:System.Exception">Genel hata durumları için fırlatılır</exception>
         </member>
         <member name="M:BookManagementAPI.Controllers.EnrollmentsController.DeleteEnrollment(System.Int32)">
             <summary>
-            Ödünç alma kaydını sil
+            Ödünç alma kaydını sil.
             </summary>
+            <param name="id">Silinecek ödünç alma kaydının ID'si</param>
+            <returns>Silme işlemine ait HTTP yanıtı</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Ödünç alma kaydı bulunamadığında fırlatılır</exception>
+            <exception cref="T:System.Exception">Genel hata durumları için fırlatılır</exception>
         </member>
         <member name="T:BookManagementAPI.Controllers.StudentsController">
             <summary>
@@ -131,42 +198,172 @@
         </member>
         <member name="M:BookManagementAPI.Controllers.StudentsController.GetStudents">
             <summary>
-            Tüm öğrencileri getir
+            Tüm öğrencileri getir.
             </summary>
+            <returns>Tüm öğrencilerin DTO listesi</returns>
         </member>
         <member name="M:BookManagementAPI.Controllers.StudentsController.GetStudent(System.Int32)">
             <summary>
-            ID ile öğrenci getir
+            ID ile öğrenci getir.
             </summary>
+            <param name="id">Öğrencinin ID'si</param>
+            <returns>Öğrenci DTO'su</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Öğrenci bulunamadığında fırlatılır</exception>
         </member>
         <member name="M:BookManagementAPI.Controllers.StudentsController.PutStudent(System.Int32,BookManagementAPI.DTOs.StudentUpdateDto)">
             <summary>
-            Öğrenci güncelle
+            Öğrenci güncelle.
             </summary>
+            <param name="id">Güncellenecek öğrencinin ID'si</param>
+            <param name="studentDto">Öğrenci güncelleme DTO'su</param>
+            <returns>Güncelleme işlemine ait HTTP yanıtı</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Öğrenci bulunamadığında fırlatılır</exception>
+            <exception cref="T:System.Exception">Diğer hata durumları için fırlatılır</exception>
         </member>
         <member name="M:BookManagementAPI.Controllers.StudentsController.PostStudent(BookManagementAPI.DTOs.StudentCreateDto)">
             <summary>
-            Yeni öğrenci ekle
+            Yeni öğrenci ekle.
             </summary>
+            <param name="studentDto">Yeni öğrenci DTO'su</param>
+            <returns>Yeni öğrencinin DTO'su</returns>
+            <exception cref="T:System.Exception">Genel hata durumları için fırlatılır</exception>
         </member>
         <member name="M:BookManagementAPI.Controllers.StudentsController.DeleteStudent(System.Int32)">
             <summary>
-            Öğrenci sil
+            Öğrenci sil.
             </summary>
+            <param name="id">Silinecek öğrencinin ID'si</param>
+            <returns>Silme işlemine ait HTTP yanıtı</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Öğrenci bulunamadığında fırlatılır</exception>
+            <exception cref="T:System.InvalidOperationException">Geçersiz işlem durumu için fırlatılır</exception>
         </member>
         <member name="T:BookManagementAPI.Data.LibraryDbContext">
             <summary>
-            Veritabanı bağlantısı ve model yapılandırması için DbContext sınıfı
+            Veritabanı bağlantısı ve model yapılandırması için DbContext sınıfı.
+            Bu sınıf, tüm entity sınıflarınızla ilişkili DbSet'leri içerir ve 
+            veritabanı yapılandırması ile seed data eklemeyi yönetir.
             </summary>
         </member>
         <member name="M:BookManagementAPI.Data.LibraryDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <summary>
-            Entity ilişkilerini ve kurallarını yapılandırma
+            Entity ilişkilerini ve kurallarını yapılandırmak için bu metot kullanılır.
+            Veritabanı tablolarındaki ilişkiler ve silme davranışları burada tanımlanır.
             </summary>
+            <param name="modelBuilder">ModelBuilder nesnesi, entity'ler arasındaki ilişkileri tanımlar.</param>
         </member>
         <member name="M:BookManagementAPI.Data.LibraryDbContext.SeedData(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <summary>
-            Başlangıç test verileri ekleme
+            Başlangıç test verilerini veritabanına eklemek için kullanılan yardımcı metod.
+            Bu metod, veritabanı ilk başlatıldığında örnek veri sağlar.
+            </summary>
+            <param name="modelBuilder">ModelBuilder nesnesi, seed data ekler.</param>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.AuthorDto">
+            <summary>
+            Yazar bilgilerini temsil eden DTO sınıfı.
+            Bu sınıf, yazarla ilgili temel bilgileri içerir.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.AuthorCreateDto">
+            <summary>
+            Yeni bir yazar oluşturmak için gereken DTO sınıfı.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.AuthorUpdateDto">
+            <summary>
+            Var olan bir yazarın bilgilerini güncellemek için gereken DTO sınıfı.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.AuthorSimpleDto">
+            <summary>
+            Yazarın temel bilgilerini temsil eden DTO sınıfı.
+            Bu sınıf, yalnızca yazarın kimliği, adı ve soyadını içerir.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.BookDto">
+            <summary>
+            Kitap bilgilerini temsil eden DTO sınıfı.
+            Bu sınıf, kitapla ilgili temel bilgileri içerir, yazar ve kategori bilgilerini de içerir.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.BookCreateDto">
+            <summary>
+            Yeni bir kitap oluşturmak için gereken DTO sınıfı.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.BookUpdateDto">
+            <summary>
+            Var olan bir kitabı güncellemek için gereken DTO sınıfı.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.BookSimpleDto">
+            <summary>
+            Kitabın temel bilgilerini temsil eden DTO sınıfı.
+            Bu sınıf, yalnızca kitabın kimliği, başlığı ve ISBN numarasını içerir.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.CategoryDto">
+            <summary>
+            Kategori bilgilerini temsil eden DTO sınıfı.
+            Bu sınıf, kategorinin temel bilgilerini içerir, aynı zamanda o kategoriye ait kitaplar da yer alır.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.CategoryCreateDto">
+            <summary>
+            Yeni bir kategori oluşturmak için gereken DTO sınıfı.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.CategoryUpdateDto">
+            <summary>
+            Var olan bir kategoriyi güncellemek için gereken DTO sınıfı.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.CategorySimpleDto">
+            <summary>
+            Kategorinin temel bilgilerini temsil eden DTO sınıfı.
+            Bu sınıf, yalnızca kategorinin kimliği ve adını içerir.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.EnrollmentDto">
+            <summary>
+            Öğrenci ve kitap ödünç alma bilgilerini temsil eden DTO sınıfı.
+            Bu sınıf, ödünç alınan kitap, öğrenci ve ilgili ödünç alma tarih bilgilerini içerir.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.EnrollmentCreateDto">
+            <summary>
+            Yeni bir ödünç alma kaydı oluşturmak için gereken DTO sınıfı.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.EnrollmentUpdateDto">
+            <summary>
+            Var olan bir ödünç alma kaydını güncellemek için gereken DTO sınıfı.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.EnrollmentSimpleDto">
+            <summary>
+            Öğrenci ve ödünç alınan kitabın temel bilgilerini temsil eden DTO sınıfı.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.StudentDto">
+            <summary>
+            Öğrenci bilgilerini temsil eden DTO sınıfı.
+            Bu sınıf, öğrenci hakkında temel bilgileri ve öğrencinin ödünç alma işlemlerine ait verileri içerir.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.StudentCreateDto">
+            <summary>
+            Yeni bir öğrenci oluşturmak için gereken DTO sınıfı.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.StudentUpdateDto">
+            <summary>
+            Var olan bir öğrenci kaydını güncellemek için gereken DTO sınıfı.
+            </summary>
+        </member>
+        <member name="T:BookManagementAPI.DTOs.StudentSimpleDto">
+            <summary>
+            Öğrencinin temel bilgilerini temsil eden DTO sınıfı (daha basit versiyon).
             </summary>
         </member>
         <member name="T:BookManagementAPI.Entities.Author">
@@ -196,65 +393,259 @@
         </member>
         <member name="T:BookManagementAPI.Extensions.ServiceCollectionExtensions">
             <summary>
-            Dependency Injection için servis koleksiyonu genişletme sınıfı
+            Bağımlılık enjeksiyonu (Dependency Injection - DI) için servis koleksiyonunu genişleten sınıf.
+            Bu sınıf, uygulamanın ihtiyaç duyduğu tüm repository ve service bağımlılıklarını ekler.
             </summary>
         </member>
         <member name="M:BookManagementAPI.Extensions.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
-            Repository bağımlılıklarını ekler
+            Repository bağımlılıklarını servislere ekler.
+            Repository, veri erişim katmanını temsil eder.
             </summary>
+            <param name="services">Bağımlılıkların ekleneceği servis koleksiyonu.</param>
+            <returns>Servis koleksiyonunu geri döner.</returns>
         </member>
         <member name="M:BookManagementAPI.Extensions.ServiceCollectionExtensions.AddServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
             <summary>
-            Service bağımlılıklarını ekler
+            Service bağımlılıklarını servislere ekler.
+            Service, iş mantığı katmanını temsil eder ve repository'ler ile iletişim kurar.
             </summary>
+            <param name="services">Bağımlılıkların ekleneceği servis koleksiyonu.</param>
+            <returns>Servis koleksiyonunu geri döner.</returns>
         </member>
         <member name="T:BookManagementAPI.Mapping.MappingProfile">
             <summary>
-            Entity ve DTO'lar arasında dönüşüm için AutoMapper profili
+            Entity ve DTO'lar arasında dönüşüm işlemlerini yöneten AutoMapper profili.
             </summary>
         </member>
-        <member name="T:BookManagementAPI.Migrations.AddRelationships">
+        <member name="T:BookManagementAPI.Migrations.InitialCreate">
             <inheritdoc />
         </member>
-        <member name="M:BookManagementAPI.Migrations.AddRelationships.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:BookManagementAPI.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:BookManagementAPI.Migrations.AddRelationships.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+        <member name="M:BookManagementAPI.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
             <inheritdoc />
         </member>
-        <member name="M:BookManagementAPI.Migrations.AddRelationships.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+        <member name="M:BookManagementAPI.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
         <member name="T:BookManagementAPI.Repositories.Implementations.AuthorRepository">
             <summary>
-            Yazar repository implementasyonu
+            Yazar (Author) verilerine erişim sağlayan repository implementasyonu.
             </summary>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.AuthorRepository.#ctor(BookManagementAPI.Data.LibraryDbContext)">
+            <summary>
+            AuthorRepository constructor'ı. Temel repository işlemleri için context geçişi yapılır.
+            </summary>
+            <param name="context">Veritabanı context'i (LibraryDbContext)</param>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.AuthorRepository.GetAuthorWithBooksAsync(System.Int32)">
+            <summary>
+            Belirli bir yazarın kitaplarıyla birlikte detaylarını getirir.
+            </summary>
+            <param name="id">Yazarın ID'si</param>
+            <returns>Kitapları dahil edilmiş Author nesnesi</returns>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.AuthorRepository.GetAllAuthorsWithBooksAsync">
+            <summary>
+            Tüm yazarları kitaplarıyla birlikte getirir.
+            </summary>
+            <returns>Kitapları dahil edilmiş yazar listesi</returns>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.AuthorRepository.HasBooksAsync(System.Int32)">
+            <summary>
+            Belirli bir yazarın herhangi bir kitabı olup olmadığını kontrol eder.
+            </summary>
+            <param name="id">Yazarın ID'si</param>
+            <returns>Kitap varsa true, yoksa false döner</returns>
         </member>
         <member name="T:BookManagementAPI.Repositories.Implementations.BookRepository">
             <summary>
-            Kitap repository implementasyonu
+            Kitap (Book) verilerine erişim sağlayan repository implementasyonu.
             </summary>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.BookRepository.#ctor(BookManagementAPI.Data.LibraryDbContext)">
+            <summary>
+            BookRepository constructor'ı. Temel repository işlemleri için context geçişi yapılır.
+            </summary>
+            <param name="context">Veritabanı context'i (LibraryDbContext)</param>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.BookRepository.GetBookWithDetailsAsync(System.Int32)">
+            <summary>
+            Belirli bir kitabın yazar ve kategori detaylarıyla birlikte getirir.
+            </summary>
+            <param name="id">Kitabın ID'si</param>
+            <returns>Author ve Category bilgileriyle birlikte Book nesnesi. Bulunamazsa null döner.</returns>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.BookRepository.GetAllBooksWithDetailsAsync">
+            <summary>
+            Tüm kitapları yazar ve kategori detaylarıyla birlikte getirir.
+            </summary>
+            <returns>Author ve Category bilgileri dahil edilmiş kitap listesi</returns>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.BookRepository.HasEnrollmentsAsync(System.Int32)">
+            <summary>
+            Belirli bir kitabın herhangi bir kaydı (enrollment) olup olmadığını kontrol eder.
+            </summary>
+            <param name="id">Kitabın ID'si</param>
+            <returns>Kayıt varsa true, yoksa false döner</returns>
         </member>
         <member name="T:BookManagementAPI.Repositories.Implementations.CategoryRepository">
             <summary>
-            Kategori repository implementasyonu
+            Kategori (Category) verilerine erişim sağlayan repository implementasyonu.
             </summary>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.CategoryRepository.#ctor(BookManagementAPI.Data.LibraryDbContext)">
+            <summary>
+            CategoryRepository constructor'ı. Temel repository işlemleri için context geçişi yapılır.
+            </summary>
+            <param name="context">Veritabanı context'i (LibraryDbContext)</param>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.CategoryRepository.GetCategoryWithBooksAsync(System.Int32)">
+            <summary>
+            Belirli bir kategoriyi, ilişkili kitaplarıyla birlikte getirir.
+            </summary>
+            <param name="id">Kategori ID'si</param>
+            <returns>Kitapları dahil edilmiş Category nesnesi. Bulunamazsa null döner.</returns>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.CategoryRepository.GetAllCategoriesWithBooksAsync">
+            <summary>
+            Tüm kategorileri, ilişkili kitaplarıyla birlikte getirir.
+            </summary>
+            <returns>Kitapları dahil edilmiş Category listesi</returns>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.CategoryRepository.HasBooksAsync(System.Int32)">
+            <summary>
+            Belirli bir kategoriye ait herhangi bir kitap olup olmadığını kontrol eder.
+            </summary>
+            <param name="id">Kategori ID'si</param>
+            <returns>Kitap varsa true, yoksa false döner</returns>
         </member>
         <member name="T:BookManagementAPI.Repositories.Implementations.EnrollmentRepository">
             <summary>
-            Ödünç alma kaydı repository implementasyonu
+            Ödünç alma kaydı (Enrollment) verilerine erişim sağlayan repository implementasyonu.
             </summary>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.EnrollmentRepository.#ctor(BookManagementAPI.Data.LibraryDbContext)">
+            <summary>
+            EnrollmentRepository constructor'ı. Temel repository işlemleri için context geçişi yapılır.
+            </summary>
+            <param name="context">Veritabanı context'i (LibraryDbContext)</param>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.EnrollmentRepository.GetEnrollmentWithDetailsAsync(System.Int32)">
+            <summary>
+            Belirli bir ödünç alma kaydını, öğrenci ve kitap detaylarıyla birlikte getirir.
+            </summary>
+            <param name="id">Ödünç alma kaydı ID'si</param>
+            <returns>Student ve Book bilgileri dahil edilmiş Enrollment nesnesi. Bulunamazsa null döner.</returns>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.EnrollmentRepository.GetAllEnrollmentsWithDetailsAsync">
+            <summary>
+            Tüm ödünç alma kayıtlarını öğrenci ve kitap detaylarıyla birlikte getirir.
+            </summary>
+            <returns>Öğrenci ve kitap bilgileri dahil edilmiş Enrollment listesi</returns>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.EnrollmentRepository.IsBookBorrowedAsync(System.Int32)">
+            <summary>
+            Belirli bir kitabın hâlâ ödünçte olup olmadığını kontrol eder.
+            </summary>
+            <param name="bookId">Kitap ID'si</param>
+            <returns>Kitap hâlâ ödünçteyse true, iade edilmişse false döner</returns>
         </member>
         <member name="T:BookManagementAPI.Repositories.Implementations.Repository`1">
             <summary>
-            Genel repository implementasyonu
+            Generic repository implementasyonu. Tüm temel veritabanı işlemleri için kullanılır.
             </summary>
+            <typeparam name="T">Veri modeli tipi (Entity)</typeparam>
+        </member>
+        <member name="F:BookManagementAPI.Repositories.Implementations.Repository`1._context">
+            <summary>
+            Veritabanı context'i
+            </summary>
+        </member>
+        <member name="F:BookManagementAPI.Repositories.Implementations.Repository`1._dbSet">
+            <summary>
+            İlgili entity'e ait DbSet
+            </summary>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.Repository`1.#ctor(BookManagementAPI.Data.LibraryDbContext)">
+            <summary>
+            Repository constructor'ı. Context ve ilgili DbSet tanımlanır.
+            </summary>
+            <param name="context">Veritabanı context'i</param>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.Repository`1.GetAllAsync">
+            <summary>
+            Tüm kayıtları getirir.
+            </summary>
+            <returns>Entity listesi</returns>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.Repository`1.GetByIdAsync(System.Int32)">
+            <summary>
+            Belirli bir ID'ye sahip kaydı getirir.
+            </summary>
+            <param name="id">Kayıt ID'si</param>
+            <returns>İlgili entity veya null</returns>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.Repository`1.AddAsync(`0)">
+            <summary>
+            Yeni bir kayıt ekler.
+            </summary>
+            <param name="entity">Eklenecek entity</param>
+            <returns>Eklenen entity</returns>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.Repository`1.UpdateAsync(`0)">
+            <summary>
+            Var olan bir kaydı günceller.
+            </summary>
+            <param name="entity">Güncellenecek entity</param>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.Repository`1.DeleteAsync(`0)">
+            <summary>
+            Bir kaydı siler.
+            </summary>
+            <param name="entity">Silinecek entity</param>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.Repository`1.ExistsAsync(System.Int32)">
+            <summary>
+            Belirli bir ID'ye sahip kaydın veritabanında olup olmadığını kontrol eder.
+            </summary>
+            <param name="id">Kayıt ID'si</param>
+            <returns>Var ise true, yok ise false</returns>
         </member>
         <member name="T:BookManagementAPI.Repositories.Implementations.StudentRepository">
             <summary>
-            Öğrenci repository implementasyonu
+            Öğrenci (Student) repository implementasyonu.
+            Öğrenciler ile ilgili veritabanı işlemleri burada yönetilir.
             </summary>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.StudentRepository.#ctor(BookManagementAPI.Data.LibraryDbContext)">
+            <summary>
+            Öğrenci repository constructor'ı.
+            </summary>
+            <param name="context">Veritabanı context'i</param>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.StudentRepository.GetStudentWithEnrollmentsAsync(System.Int32)">
+            <summary>
+            Belirli bir öğrenciyi, kayıtlı olduğu kitaplarla (enrollments) birlikte getirir.
+            </summary>
+            <param name="id">Öğrenci ID</param>
+            <returns>Öğrenci nesnesi veya null</returns>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.StudentRepository.GetAllStudentsWithEnrollmentsAsync">
+            <summary>
+            Tüm öğrencileri, kayıtlı oldukları kitaplarla birlikte getirir.
+            </summary>
+            <returns>Öğrenci listesi</returns>
+        </member>
+        <member name="M:BookManagementAPI.Repositories.Implementations.StudentRepository.HasEnrollmentsAsync(System.Int32)">
+            <summary>
+            Belirli bir öğrencinin herhangi bir kaydı (enrollment) olup olmadığını kontrol eder.
+            </summary>
+            <param name="id">Öğrenci ID</param>
+            <returns>Eğer kaydı varsa true, yoksa false</returns>
         </member>
         <member name="T:BookManagementAPI.Repositories.Interfaces.IAuthorRepository">
             <summary>
@@ -289,28 +680,240 @@
         </member>
         <member name="T:BookManagementAPI.Services.Implementations.AuthorService">
             <summary>
-            Yazar işlemleri için servis implementasyonu
+            Yazar işlemleri için servis implementasyonu.
+            Yazar (Author) CRUD operasyonlarını yönetir.
             </summary>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.AuthorService.#ctor(BookManagementAPI.Repositories.Interfaces.IAuthorRepository,AutoMapper.IMapper)">
+            <summary>
+            AuthorService constructor'ı.
+            </summary>
+            <param name="authorRepository">Yazar repository'si</param>
+            <param name="mapper">AutoMapper nesnesi</param>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.AuthorService.GetAllAuthorsAsync">
+            <summary>
+            Tüm yazarları ve yazdıkları kitapları getirir.
+            </summary>
+            <returns>Yazar DTO listesi</returns>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.AuthorService.GetAuthorByIdAsync(System.Int32)">
+            <summary>
+            Belirli bir yazarı ID'sine göre getirir (kitap detaylarıyla birlikte).
+            </summary>
+            <param name="id">Yazar ID</param>
+            <returns>Yazar DTO</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Eğer yazar bulunamazsa fırlatılır</exception>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.AuthorService.CreateAuthorAsync(BookManagementAPI.DTOs.AuthorCreateDto)">
+            <summary>
+            Yeni bir yazar oluşturur.
+            </summary>
+            <param name="authorDto">Yazar oluşturma DTO'su</param>
+            <returns>Oluşturulan yazar DTO'su</returns>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.AuthorService.UpdateAuthorAsync(System.Int32,BookManagementAPI.DTOs.AuthorUpdateDto)">
+            <summary>
+            Var olan bir yazarı günceller.
+            </summary>
+            <param name="id">Yazar ID</param>
+            <param name="authorDto">Güncellenecek yazar DTO'su</param>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Eğer yazar bulunamazsa fırlatılır</exception>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.AuthorService.DeleteAuthorAsync(System.Int32)">
+            <summary>
+            Belirli bir yazarı siler.
+            Önce yazarın kitaplarının olup olmadığı kontrol edilir.
+            </summary>
+            <param name="id">Yazar ID</param>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Yazar bulunamazsa</exception>
+            <exception cref="T:System.InvalidOperationException">Yazarın kitapları varsa silinemez</exception>
         </member>
         <member name="T:BookManagementAPI.Services.Implementations.BookService">
             <summary>
-            Kitap işlemleri için servis implementasyonu
+            Kitap işlemleri için servis implementasyonu.
+            Kitap (Book) CRUD operasyonlarını yönetir.
             </summary>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.BookService.GetAllBooksAsync">
+            <summary>
+            Tüm kitapları ve ilişkili detayları alır.
+            </summary>
+            <returns>Kitapların DTO listesi</returns>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.BookService.GetBookByIdAsync(System.Int32)">
+            <summary>
+            Kitap ID'sine göre kitap detaylarını getirir.
+            </summary>
+            <param name="id">Kitap ID'si</param>
+            <returns>Kitap detaylarının DTO'su</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Kitap bulunamadığında fırlatılır</exception>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.BookService.CreateBookAsync(BookManagementAPI.DTOs.BookCreateDto)">
+            <summary>
+            Yeni bir kitap oluşturur.
+            Yazar ve kategori kontrolü yapılır.
+            </summary>
+            <param name="bookDto">Kitap oluşturma DTO'su</param>
+            <returns>Oluşturulan kitabın DTO'su</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Yazar veya kategori bulunamazsa fırlatılır</exception>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.BookService.UpdateBookAsync(System.Int32,BookManagementAPI.DTOs.BookUpdateDto)">
+            <summary>
+            Kitap bilgilerini günceller.
+            Yazar ve kategori kontrolü yapılır.
+            </summary>
+            <param name="id">Güncellenecek kitabın ID'si</param>
+            <param name="bookDto">Kitap güncelleme DTO'su</param>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Kitap, yazar veya kategori bulunamazsa fırlatılır</exception>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.BookService.DeleteBookAsync(System.Int32)">
+            <summary>
+            Kitap silme işlemi.
+            İlişkili ödünç alma kayıtları kontrol edilir.
+            </summary>
+            <param name="id">Silinecek kitabın ID'si</param>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Kitap bulunamazsa fırlatılır</exception>
+            <exception cref="T:System.InvalidOperationException">Kitap ödünç alındıysa fırlatılır</exception>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.BookService.ValidateAuthorAndCategoryAsync(System.Int32,System.Int32)">
+            <summary>
+            Yazar ve kategori ID'lerini kontrol eden yardımcı metod.
+            </summary>
+            <param name="authorId">Yazar ID'si</param>
+            <param name="categoryId">Kategori ID'si</param>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Yazar veya kategori bulunamazsa fırlatılır</exception>
         </member>
         <member name="T:BookManagementAPI.Services.Implementations.CategoryService">
             <summary>
-            Kategori işlemleri için servis implementasyonu
+            Kategori işlemleri için servis implementasyonu.
+            Kategori (Category) CRUD operasyonlarını yönetir.
             </summary>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.CategoryService.GetAllCategoriesAsync">
+            <summary>
+            Tüm kategorileri ve ilişkili kitapları alır.
+            </summary>
+            <returns>Kategorilerin DTO listesi</returns>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.CategoryService.GetCategoryByIdAsync(System.Int32)">
+            <summary>
+            Kategori ID'sine göre kategori detaylarını getirir.
+            </summary>
+            <param name="id">Kategori ID'si</param>
+            <returns>Kategori detaylarının DTO'su</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Kategori bulunamadığında fırlatılır</exception>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.CategoryService.CreateCategoryAsync(BookManagementAPI.DTOs.CategoryCreateDto)">
+            <summary>
+            Yeni bir kategori oluşturur.
+            </summary>
+            <param name="categoryDto">Kategori oluşturma DTO'su</param>
+            <returns>Oluşturulan kategorinin DTO'su</returns>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.CategoryService.UpdateCategoryAsync(System.Int32,BookManagementAPI.DTOs.CategoryUpdateDto)">
+            <summary>
+            Kategori bilgilerini günceller.
+            </summary>
+            <param name="id">Güncellenecek kategorinin ID'si</param>
+            <param name="categoryDto">Kategori güncelleme DTO'su</param>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Kategori bulunamadığında fırlatılır</exception>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.CategoryService.DeleteCategoryAsync(System.Int32)">
+            <summary>
+            Kategoriyi siler.
+            İlişkili kitapların olup olmadığını kontrol eder.
+            </summary>
+            <param name="id">Silinecek kategorinin ID'si</param>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Kategori bulunamadığında fırlatılır</exception>
+            <exception cref="T:System.InvalidOperationException">Kategoriye ait kitaplar varsa fırlatılır</exception>
         </member>
         <member name="T:BookManagementAPI.Services.Implementations.EnrollmentService">
             <summary>
-            Ödünç alma kaydı işlemleri için servis implementasyonu
+            Ödünç alma kaydı işlemleri için servis implementasyonu.
+            Ödünç alma (enrollment) CRUD operasyonlarını yönetir.
             </summary>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.EnrollmentService.GetAllEnrollmentsAsync">
+            <summary>
+            Tüm ödünç alma kayıtlarını ve ilişkili öğrenci ile kitap bilgilerini alır.
+            </summary>
+            <returns>Ödünç alma kayıtlarının DTO listesi</returns>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.EnrollmentService.GetEnrollmentByIdAsync(System.Int32)">
+            <summary>
+            Ödünç alma kaydını ID'ye göre getirir.
+            </summary>
+            <param name="id">Ödünç alma kaydının ID'si</param>
+            <returns>Ödünç alma kaydının DTO'su</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Ödünç alma kaydı bulunamadığında fırlatılır</exception>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.EnrollmentService.CreateEnrollmentAsync(BookManagementAPI.DTOs.EnrollmentCreateDto)">
+            <summary>
+            Yeni bir ödünç alma kaydı oluşturur.
+            </summary>
+            <param name="enrollmentDto">Ödünç alma kaydı oluşturma DTO'su</param>
+            <returns>Oluşturulan ödünç alma kaydının DTO'su</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Öğrenci veya kitap bulunamadığında fırlatılır</exception>
+            <exception cref="T:System.InvalidOperationException">Kitap zaten ödünç alınmışsa fırlatılır</exception>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.EnrollmentService.UpdateEnrollmentAsync(System.Int32,BookManagementAPI.DTOs.EnrollmentUpdateDto)">
+            <summary>
+            Var olan ödünç alma kaydını günceller.
+            </summary>
+            <param name="id">Güncellenecek ödünç alma kaydının ID'si</param>
+            <param name="enrollmentDto">Ödünç alma kaydı güncelleme DTO'su</param>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Ödünç alma kaydı bulunamadığında fırlatılır</exception>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.EnrollmentService.DeleteEnrollmentAsync(System.Int32)">
+            <summary>
+            Ödünç alma kaydını siler.
+            </summary>
+            <param name="id">Silinecek ödünç alma kaydının ID'si</param>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Ödünç alma kaydı bulunamadığında fırlatılır</exception>
         </member>
         <member name="T:BookManagementAPI.Services.Implementations.StudentService">
             <summary>
-            Öğrenci işlemleri için servis implementasyonu
+            Öğrenci işlemleri için servis implementasyonu.
+            Öğrenci CRUD operasyonlarını yönetir.
             </summary>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.StudentService.GetAllStudentsAsync">
+            <summary>
+            Tüm öğrencileri ve ilişkili ödünç alma bilgilerini alır.
+            </summary>
+            <returns>Öğrencilerin DTO listesi</returns>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.StudentService.GetStudentByIdAsync(System.Int32)">
+            <summary>
+            Öğrenciyi ID'ye göre getirir.
+            </summary>
+            <param name="id">Öğrencinin ID'si</param>
+            <returns>Öğrencinin DTO'su</returns>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Öğrenci bulunamadığında fırlatılır</exception>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.StudentService.CreateStudentAsync(BookManagementAPI.DTOs.StudentCreateDto)">
+            <summary>
+            Yeni bir öğrenci oluşturur.
+            </summary>
+            <param name="studentDto">Öğrenci oluşturma DTO'su</param>
+            <returns>Oluşturulan öğrencinin DTO'su</returns>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.StudentService.UpdateStudentAsync(System.Int32,BookManagementAPI.DTOs.StudentUpdateDto)">
+            <summary>
+            Var olan öğrenciyi günceller.
+            </summary>
+            <param name="id">Güncellenecek öğrencinin ID'si</param>
+            <param name="studentDto">Öğrenci güncelleme DTO'su</param>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Öğrenci bulunamadığında fırlatılır</exception>
+        </member>
+        <member name="M:BookManagementAPI.Services.Implementations.StudentService.DeleteStudentAsync(System.Int32)">
+            <summary>
+            Öğrenciyi siler.
+            </summary>
+            <param name="id">Silinecek öğrencinin ID'si</param>
+            <exception cref="T:System.Collections.Generic.KeyNotFoundException">Öğrenci bulunamadığında fırlatılır</exception>
+            <exception cref="T:System.InvalidOperationException">Öğrencinin ilişkili ödünç alma kayıtları varsa fırlatılır</exception>
         </member>
         <member name="T:BookManagementAPI.Services.Interfaces.IAuthorService">
             <summary>

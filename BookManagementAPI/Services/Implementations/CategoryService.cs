@@ -7,7 +7,8 @@ using BookManagementAPI.Services.Interfaces;
 namespace BookManagementAPI.Services.Implementations
 {
     /// <summary>
-    /// Kategori işlemleri için servis implementasyonu
+    /// Kategori işlemleri için servis implementasyonu.
+    /// Kategori (Category) CRUD operasyonlarını yönetir.
     /// </summary>
     public class CategoryService : ICategoryService
     {
@@ -20,12 +21,22 @@ namespace BookManagementAPI.Services.Implementations
             _mapper = mapper;
         }
 
+        /// <summary>
+        /// Tüm kategorileri ve ilişkili kitapları alır.
+        /// </summary>
+        /// <returns>Kategorilerin DTO listesi</returns>
         public async Task<IEnumerable<CategoryDto>> GetAllCategoriesAsync()
         {
             var categories = await _categoryRepository.GetAllCategoriesWithBooksAsync();
             return _mapper.Map<IEnumerable<CategoryDto>>(categories);
         }
 
+        /// <summary>
+        /// Kategori ID'sine göre kategori detaylarını getirir.
+        /// </summary>
+        /// <param name="id">Kategori ID'si</param>
+        /// <returns>Kategori detaylarının DTO'su</returns>
+        /// <exception cref="KeyNotFoundException">Kategori bulunamadığında fırlatılır</exception>
         public async Task<CategoryDto> GetCategoryByIdAsync(int id)
         {
             var category = await _categoryRepository.GetCategoryWithBooksAsync(id);
@@ -36,6 +47,11 @@ namespace BookManagementAPI.Services.Implementations
             return _mapper.Map<CategoryDto>(category);
         }
 
+        /// <summary>
+        /// Yeni bir kategori oluşturur.
+        /// </summary>
+        /// <param name="categoryDto">Kategori oluşturma DTO'su</param>
+        /// <returns>Oluşturulan kategorinin DTO'su</returns>
         public async Task<CategoryDto> CreateCategoryAsync(CategoryCreateDto categoryDto)
         {
             var category = _mapper.Map<Category>(categoryDto);
@@ -46,6 +62,12 @@ namespace BookManagementAPI.Services.Implementations
             return _mapper.Map<CategoryDto>(categoryWithDetails);
         }
 
+        /// <summary>
+        /// Kategori bilgilerini günceller.
+        /// </summary>
+        /// <param name="id">Güncellenecek kategorinin ID'si</param>
+        /// <param name="categoryDto">Kategori güncelleme DTO'su</param>
+        /// <exception cref="KeyNotFoundException">Kategori bulunamadığında fırlatılır</exception>
         public async Task UpdateCategoryAsync(int id, CategoryUpdateDto categoryDto)
         {
             var category = await _categoryRepository.GetByIdAsync(id);
@@ -58,6 +80,13 @@ namespace BookManagementAPI.Services.Implementations
             await _categoryRepository.UpdateAsync(category);
         }
 
+        /// <summary>
+        /// Kategoriyi siler.
+        /// İlişkili kitapların olup olmadığını kontrol eder.
+        /// </summary>
+        /// <param name="id">Silinecek kategorinin ID'si</param>
+        /// <exception cref="KeyNotFoundException">Kategori bulunamadığında fırlatılır</exception>
+        /// <exception cref="InvalidOperationException">Kategoriye ait kitaplar varsa fırlatılır</exception>
         public async Task DeleteCategoryAsync(int id)
         {
             var category = await _categoryRepository.GetByIdAsync(id);

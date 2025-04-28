@@ -5173,11 +5173,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alpay\\source\\repos\\BookManagementAPI\\BookManagementAPI\\BookManagementAPI.csproj",
+      "projectUniqueName": "C:\\Users\\alpay\\OneDrive\\Masaüstü\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\BookManagementAPI.csproj",
       "projectName": "BookManagementAPI",
-      "projectPath": "C:\\Users\\alpay\\source\\repos\\BookManagementAPI\\BookManagementAPI\\BookManagementAPI.csproj",
+      "projectPath": "C:\\Users\\alpay\\OneDrive\\Masaüstü\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\BookManagementAPI.csproj",
       "packagesPath": "C:\\Users\\alpay\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alpay\\source\\repos\\BookManagementAPI\\BookManagementAPI\\obj\\",
+      "outputPath": "C:\\Users\\alpay\\OneDrive\\Masaüstü\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alpay\\AppData\\Roaming\\NuGet\\NuGet.Config",

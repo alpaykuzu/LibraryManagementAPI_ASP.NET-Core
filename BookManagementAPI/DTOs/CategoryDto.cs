@@ -2,7 +2,10 @@
 
 namespace BookManagementAPI.DTOs
 {
-    // Category için DTOs
+    /// <summary>
+    /// Kategori bilgilerini temsil eden DTO sınıfı.
+    /// Bu sınıf, kategorinin temel bilgilerini içerir, aynı zamanda o kategoriye ait kitaplar da yer alır.
+    /// </summary>
     public class CategoryDto
     {
         public int Id { get; set; }
@@ -11,30 +14,39 @@ namespace BookManagementAPI.DTOs
         public List<BookSimpleDto> Books { get; set; }
     }
 
+    /// <summary>
+    /// Yeni bir kategori oluşturmak için gereken DTO sınıfı.
+    /// </summary>
     public class CategoryCreateDto
     {
-        [Required]
-        [StringLength(100)]
+        [Required] // Kategori adı zorunlu
+        [StringLength(100)] // Maksimum uzunluk 100 karakter
         public string Name { get; set; }
 
-        [StringLength(500)]
+        [StringLength(500)] // Maksimum uzunluk 500 karakter
         public string Description { get; set; }
     }
 
+    /// <summary>
+    /// Var olan bir kategoriyi güncellemek için gereken DTO sınıfı.
+    /// </summary>
     public class CategoryUpdateDto
     {
-        [Required]
-        [StringLength(100)]
+        [Required] // Kategori adı zorunlu
+        [StringLength(100)] // Maksimum uzunluk 100 karakter
         public string Name { get; set; }
 
-        [StringLength(500)]
+        [StringLength(500)] // Maksimum uzunluk 500 karakter
         public string Description { get; set; }
     }
 
+    /// <summary>
+    /// Kategorinin temel bilgilerini temsil eden DTO sınıfı.
+    /// Bu sınıf, yalnızca kategorinin kimliği ve adını içerir.
+    /// </summary>
     public class CategorySimpleDto
     {
         public int Id { get; set; }
         public string Name { get; set; }
     }
-
 }

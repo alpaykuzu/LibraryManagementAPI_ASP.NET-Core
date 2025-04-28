@@ -1,0 +1,610 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\bookmanagementapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\bookmanagementapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\repositories\\interfaces\\iauthorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\repositories\\interfaces\\iauthorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\repositories\\implementations\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\repositories\\implementations\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\dtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\dtos\\enrollmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\dtos\\enrollmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\dtos\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\dtos\\bookdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\dtos\\authordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\dtos\\authordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\entities\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\entities\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\data\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\data\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\controllers\\enrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\services\\interfaces\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\services\\interfaces\\iauthorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\services\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\services\\implementations\\enrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\services\\implementations\\enrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\repositories\\implementations\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\repositories\\implementations\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\services\\implementations\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\services\\implementations\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\services\\implementations\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\services\\implementations\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\services\\implementations\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\services\\implementations\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\repositories\\implementations\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\repositories\\implementations\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\repositories\\implementations\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\repositories\\implementations\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\repositories\\implementations\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\repositories\\implementations\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\repositories\\implementations\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\repositories\\implementations\\authorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|c:\\users\\alpay\\onedrive\\masa\u00FCst\u00FC\\librarymanagementapi_asp.net-core\\librarymanagementapi_asp.net-core\\bookmanagementapi\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B0557DB-3821-42B8-A3D8-3E62530580BF}|BookManagementAPI\\BookManagementAPI.csproj|solutionrelative:bookmanagementapi\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "BookManagementAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\appsettings.json",
+              "RelativeToolTip": "BookManagementAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-28T15:34:52.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookManagementAPI",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\BookManagementAPI.csproj",
+              "RelativeDocumentMoniker": "BookManagementAPI\\BookManagementAPI.csproj",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\BookManagementAPI.csproj",
+              "RelativeToolTip": "BookManagementAPI\\BookManagementAPI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-28T15:31:07.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAuthorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Repositories\\Interfaces\\IAuthorRepository.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Repositories\\Interfaces\\IAuthorRepository.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Repositories\\Interfaces\\IAuthorRepository.cs",
+              "RelativeToolTip": "BookManagementAPI\\Repositories\\Interfaces\\IAuthorRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T15:28:21.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StudentDto.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\DTOs\\StudentDto.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\DTOs\\StudentDto.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\DTOs\\StudentDto.cs",
+              "RelativeToolTip": "BookManagementAPI\\DTOs\\StudentDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T15:07:42.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryDto.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\DTOs\\CategoryDto.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\DTOs\\CategoryDto.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\DTOs\\CategoryDto.cs",
+              "RelativeToolTip": "BookManagementAPI\\DTOs\\CategoryDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T15:04:38.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthorDto.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\DTOs\\AuthorDto.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\DTOs\\AuthorDto.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\DTOs\\AuthorDto.cs",
+              "RelativeToolTip": "BookManagementAPI\\DTOs\\AuthorDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:37:20.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "BookManagementAPI\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:57:16.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Author.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Entities\\Author.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Entities\\Author.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Entities\\Author.cs",
+              "RelativeToolTip": "BookManagementAPI\\Entities\\Author.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:37:33.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Program.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Program.cs",
+              "RelativeToolTip": "BookManagementAPI\\Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T15:11:26.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BookDto.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\DTOs\\BookDto.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\DTOs\\BookDto.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\DTOs\\BookDto.cs",
+              "RelativeToolTip": "BookManagementAPI\\DTOs\\BookDto.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAEsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T15:03:03.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "BookManagementAPI\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAswIEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:56:05.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Repositories\\Implementations\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Repositories\\Implementations\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Repositories\\Implementations\\StudentRepository.cs",
+              "RelativeToolTip": "BookManagementAPI\\Repositories\\Implementations\\StudentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:45:55.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EnrollmentDto.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\DTOs\\EnrollmentDto.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\DTOs\\EnrollmentDto.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\DTOs\\EnrollmentDto.cs",
+              "RelativeToolTip": "BookManagementAPI\\DTOs\\EnrollmentDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T15:06:44.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "BookManagementAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAiwDMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:38:46.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LibraryDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Data\\LibraryDbContext.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Data\\LibraryDbContext.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Data\\LibraryDbContext.cs",
+              "RelativeToolTip": "BookManagementAPI\\Data\\LibraryDbContext.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAADwvzAAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:37:06.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Entities\\Book.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Entities\\Book.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Entities\\Book.cs",
+              "RelativeToolTip": "BookManagementAPI\\Entities\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:38:00.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Entities\\Category.cs",
+              "RelativeToolTip": "BookManagementAPI\\Entities\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:38:20.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Enrollment.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Entities\\Enrollment.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Entities\\Enrollment.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Entities\\Enrollment.cs",
+              "RelativeToolTip": "BookManagementAPI\\Entities\\Enrollment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:38:32.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Entities\\Student.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Entities\\Student.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Entities\\Student.cs",
+              "RelativeToolTip": "BookManagementAPI\\Entities\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:38:40.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EnrollmentController.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Controllers\\EnrollmentController.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Controllers\\EnrollmentController.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Controllers\\EnrollmentController.cs",
+              "RelativeToolTip": "BookManagementAPI\\Controllers\\EnrollmentController.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAUwIsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:56:04.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Controllers\\BookController.cs",
+              "RelativeToolTip": "BookManagementAPI\\Controllers\\BookController.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAUwIoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:54:54.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IAuthorService.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Services\\Interfaces\\IAuthorService.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Services\\Interfaces\\IAuthorService.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Services\\Interfaces\\IAuthorService.cs",
+              "RelativeToolTip": "BookManagementAPI\\Services\\Interfaces\\IAuthorService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:54:06.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Services\\Implementations\\StudentService.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Services\\Implementations\\StudentService.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Services\\Implementations\\StudentService.cs",
+              "RelativeToolTip": "BookManagementAPI\\Services\\Implementations\\StudentService.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAcwGoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:53:28.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EnrollmentService.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Services\\Implementations\\EnrollmentService.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Services\\Implementations\\EnrollmentService.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Services\\Implementations\\EnrollmentService.cs",
+              "RelativeToolTip": "BookManagementAPI\\Services\\Implementations\\EnrollmentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:52:28.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Services\\Implementations\\CategoryService.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Services\\Implementations\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Services\\Implementations\\CategoryService.cs",
+              "RelativeToolTip": "BookManagementAPI\\Services\\Implementations\\CategoryService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwGsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:51:29.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AuthorService.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Services\\Implementations\\AuthorService.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Services\\Implementations\\AuthorService.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Services\\Implementations\\AuthorService.cs",
+              "RelativeToolTip": "BookManagementAPI\\Services\\Implementations\\AuthorService.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAkwHIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:46:39.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AuthorController.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Controllers\\AuthorController.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Controllers\\AuthorController.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Controllers\\AuthorController.cs",
+              "RelativeToolTip": "BookManagementAPI\\Controllers\\AuthorController.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAUwIEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:36:52.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Services\\Implementations\\BookService.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Services\\Implementations\\BookService.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Services\\Implementations\\BookService.cs",
+              "RelativeToolTip": "BookManagementAPI\\Services\\Implementations\\BookService.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAUwJAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:48:31.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Repositories\\Implementations\\Repository.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Repositories\\Implementations\\Repository.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Repositories\\Implementations\\Repository.cs",
+              "RelativeToolTip": "BookManagementAPI\\Repositories\\Implementations\\Repository.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwGIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:45:11.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EnrollmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Repositories\\Implementations\\EnrollmentRepository.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Repositories\\Implementations\\EnrollmentRepository.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Repositories\\Implementations\\EnrollmentRepository.cs",
+              "RelativeToolTip": "BookManagementAPI\\Repositories\\Implementations\\EnrollmentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:44:39.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Repositories\\Implementations\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Repositories\\Implementations\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Repositories\\Implementations\\CategoryRepository.cs",
+              "RelativeToolTip": "BookManagementAPI\\Repositories\\Implementations\\CategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:41:11.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Repositories\\Implementations\\BookRepository.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Repositories\\Implementations\\BookRepository.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Repositories\\Implementations\\BookRepository.cs",
+              "RelativeToolTip": "BookManagementAPI\\Repositories\\Implementations\\BookRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:40:29.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AuthorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Repositories\\Implementations\\AuthorRepository.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Repositories\\Implementations\\AuthorRepository.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Repositories\\Implementations\\AuthorRepository.cs",
+              "RelativeToolTip": "BookManagementAPI\\Repositories\\Implementations\\AuthorRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACcAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:40:24.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "BookManagementAPI\\Mapping\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\alpay\\OneDrive\\Masa\u00FCst\u00FC\\LibraryManagementAPI_ASP.NET-Core\\LibraryManagementAPI_ASP.NET-Core\\BookManagementAPI\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "BookManagementAPI\\Mapping\\MappingProfile.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAAAGkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:38:54.425Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

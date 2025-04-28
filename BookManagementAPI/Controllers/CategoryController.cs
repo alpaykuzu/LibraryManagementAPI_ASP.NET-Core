@@ -25,8 +25,9 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Tüm kategorileri getir
+        /// Tüm kategorileri getir.
         /// </summary>
+        /// <returns>Tüm kategorilerin DTO listesi</returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CategoryDto>>> GetCategories()
         {
@@ -35,8 +36,11 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// ID ile kategori getir
+        /// ID ile kategori getir.
         /// </summary>
+        /// <param name="id">Kategorinin ID'si</param>
+        /// <returns>Kategori DTO'su</returns>
+        /// <exception cref="KeyNotFoundException">Kategori bulunamadığında fırlatılır</exception>
         [HttpGet("{id}")]
         public async Task<ActionResult<CategoryDto>> GetCategory(int id)
         {
@@ -52,8 +56,13 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Kategori güncelle
+        /// Kategori güncelle.
         /// </summary>
+        /// <param name="id">Güncellenecek kategorinin ID'si</param>
+        /// <param name="categoryDto">Kategori güncelleme DTO'su</param>
+        /// <returns>Güncelleme işlemine ait HTTP yanıtı</returns>
+        /// <exception cref="KeyNotFoundException">Kategori bulunamadığında fırlatılır</exception>
+        /// <exception cref="Exception">Diğer genel hatalar için fırlatılır</exception>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCategory(int id, CategoryUpdateDto categoryDto)
         {
@@ -73,8 +82,11 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Yeni kategori ekle
+        /// Yeni kategori ekle.
         /// </summary>
+        /// <param name="categoryDto">Kategori oluşturma DTO'su</param>
+        /// <returns>Oluşturulan kategorinin DTO'su</returns>
+        /// <exception cref="Exception">Genel hata durumları için fırlatılır</exception>
         [HttpPost]
         public async Task<ActionResult<CategoryDto>> PostCategory(CategoryCreateDto categoryDto)
         {
@@ -90,8 +102,12 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Kategori sil
+        /// Kategori sil.
         /// </summary>
+        /// <param name="id">Silinecek kategorinin ID'si</param>
+        /// <returns>Silme işlemine ait HTTP yanıtı</returns>
+        /// <exception cref="KeyNotFoundException">Kategori bulunamadığında fırlatılır</exception>
+        /// <exception cref="InvalidOperationException">Geçersiz işlem durumu (örneğin, ilişkili veri bulunması gibi) için fırlatılır</exception>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {

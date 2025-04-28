@@ -25,8 +25,9 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Tüm yazarları getir
+        /// Tüm yazarları getir.
         /// </summary>
+        /// <returns>Tüm yazarların DTO listesi</returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<AuthorDto>>> GetAuthors()
         {
@@ -35,8 +36,11 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// ID ile yazar getir
+        /// ID ile yazar getir.
         /// </summary>
+        /// <param name="id">Yazarın ID'si</param>
+        /// <returns>Yazarın DTO'su</returns>
+        /// <exception cref="KeyNotFoundException">Yazar bulunamadığında fırlatılır</exception>
         [HttpGet("{id}")]
         public async Task<ActionResult<AuthorDto>> GetAuthor(int id)
         {
@@ -52,8 +56,13 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Yazar güncelle
+        /// Yazar güncelle.
         /// </summary>
+        /// <param name="id">Güncellenecek yazarın ID'si</param>
+        /// <param name="authorDto">Yazar güncelleme DTO'su</param>
+        /// <returns>Güncelleme işlemine ait HTTP yanıtı</returns>
+        /// <exception cref="KeyNotFoundException">Yazar bulunamadığında fırlatılır</exception>
+        /// <exception cref="Exception">Diğer genel hatalar için fırlatılır</exception>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAuthor(int id, AuthorUpdateDto authorDto)
         {
@@ -73,8 +82,11 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Yeni yazar ekle
+        /// Yeni yazar ekle.
         /// </summary>
+        /// <param name="authorDto">Yazar oluşturma DTO'su</param>
+        /// <returns>Oluşturulan yazarın DTO'su</returns>
+        /// <exception cref="Exception">Genel hata durumları için fırlatılır</exception>
         [HttpPost]
         public async Task<ActionResult<AuthorDto>> PostAuthor(AuthorCreateDto authorDto)
         {
@@ -90,8 +102,12 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Yazar sil
+        /// Yazar sil.
         /// </summary>
+        /// <param name="id">Silinecek yazarın ID'si</param>
+        /// <returns>Silme işlemine ait HTTP yanıtı</returns>
+        /// <exception cref="KeyNotFoundException">Yazar bulunamadığında fırlatılır</exception>
+        /// <exception cref="InvalidOperationException">Geçersiz işlem durumları için fırlatılır</exception>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAuthor(int id)
         {

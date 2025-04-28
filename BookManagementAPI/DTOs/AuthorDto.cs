@@ -2,7 +2,10 @@
 
 namespace BookManagementAPI.DTOs
 {
-    // Author için DTOs
+    /// <summary>
+    /// Yazar bilgilerini temsil eden DTO sınıfı.
+    /// Bu sınıf, yazarla ilgili temel bilgileri içerir.
+    /// </summary>
     public class AuthorDto
     {
         public int Id { get; set; }
@@ -12,32 +15,42 @@ namespace BookManagementAPI.DTOs
         public List<BookSimpleDto> Books { get; set; }
     }
 
+    /// <summary>
+    /// Yeni bir yazar oluşturmak için gereken DTO sınıfı.
+    /// </summary>
     public class AuthorCreateDto
     {
-        [Required]
-        [StringLength(100)]
+        [Required] // Ad zorunludur
+        [StringLength(100)] // Maksimum uzunluk 100 karakter
         public string Name { get; set; }
 
-        [StringLength(100)]
+        [StringLength(100)] // Maksimum uzunluk 100 karakter
         public string Surname { get; set; }
 
-        [StringLength(500)]
+        [StringLength(500)] // Maksimum uzunluk 500 karakter
         public string Biography { get; set; }
     }
 
+    /// <summary>
+    /// Var olan bir yazarın bilgilerini güncellemek için gereken DTO sınıfı.
+    /// </summary>
     public class AuthorUpdateDto
     {
-        [Required]
-        [StringLength(100)]
+        [Required] // Ad zorunludur
+        [StringLength(100)] // Maksimum uzunluk 100 karakter
         public string Name { get; set; }
 
-        [StringLength(100)]
+        [StringLength(100)] // Maksimum uzunluk 100 karakter
         public string Surname { get; set; }
 
-        [StringLength(500)]
+        [StringLength(500)] // Maksimum uzunluk 500 karakter
         public string Biography { get; set; }
     }
 
+    /// <summary>
+    /// Yazarın temel bilgilerini temsil eden DTO sınıfı.
+    /// Bu sınıf, yalnızca yazarın kimliği, adı ve soyadını içerir.
+    /// </summary>
     public class AuthorSimpleDto
     {
         public int Id { get; set; }

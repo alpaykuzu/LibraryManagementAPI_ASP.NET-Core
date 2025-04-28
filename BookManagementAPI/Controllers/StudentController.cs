@@ -25,8 +25,9 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Tüm öğrencileri getir
+        /// Tüm öğrencileri getir.
         /// </summary>
+        /// <returns>Tüm öğrencilerin DTO listesi</returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<StudentDto>>> GetStudents()
         {
@@ -35,8 +36,11 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// ID ile öğrenci getir
+        /// ID ile öğrenci getir.
         /// </summary>
+        /// <param name="id">Öğrencinin ID'si</param>
+        /// <returns>Öğrenci DTO'su</returns>
+        /// <exception cref="KeyNotFoundException">Öğrenci bulunamadığında fırlatılır</exception>
         [HttpGet("{id}")]
         public async Task<ActionResult<StudentDto>> GetStudent(int id)
         {
@@ -52,8 +56,13 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Öğrenci güncelle
+        /// Öğrenci güncelle.
         /// </summary>
+        /// <param name="id">Güncellenecek öğrencinin ID'si</param>
+        /// <param name="studentDto">Öğrenci güncelleme DTO'su</param>
+        /// <returns>Güncelleme işlemine ait HTTP yanıtı</returns>
+        /// <exception cref="KeyNotFoundException">Öğrenci bulunamadığında fırlatılır</exception>
+        /// <exception cref="Exception">Diğer hata durumları için fırlatılır</exception>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutStudent(int id, StudentUpdateDto studentDto)
         {
@@ -73,8 +82,11 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Yeni öğrenci ekle
+        /// Yeni öğrenci ekle.
         /// </summary>
+        /// <param name="studentDto">Yeni öğrenci DTO'su</param>
+        /// <returns>Yeni öğrencinin DTO'su</returns>
+        /// <exception cref="Exception">Genel hata durumları için fırlatılır</exception>
         [HttpPost]
         public async Task<ActionResult<StudentDto>> PostStudent(StudentCreateDto studentDto)
         {
@@ -90,8 +102,12 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Öğrenci sil
+        /// Öğrenci sil.
         /// </summary>
+        /// <param name="id">Silinecek öğrencinin ID'si</param>
+        /// <returns>Silme işlemine ait HTTP yanıtı</returns>
+        /// <exception cref="KeyNotFoundException">Öğrenci bulunamadığında fırlatılır</exception>
+        /// <exception cref="InvalidOperationException">Geçersiz işlem durumu için fırlatılır</exception>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteStudent(int id)
         {

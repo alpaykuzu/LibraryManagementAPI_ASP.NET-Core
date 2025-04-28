@@ -2,7 +2,10 @@
 
 namespace BookManagementAPI.DTOs
 {
-    // Student için DTOs
+    /// <summary>
+    /// Öğrenci bilgilerini temsil eden DTO sınıfı.
+    /// Bu sınıf, öğrenci hakkında temel bilgileri ve öğrencinin ödünç alma işlemlerine ait verileri içerir.
+    /// </summary>
     public class StudentDto
     {
         public int Id { get; set; }
@@ -13,6 +16,9 @@ namespace BookManagementAPI.DTOs
         public List<EnrollmentSimpleDto> Enrollments { get; set; }
     }
 
+    /// <summary>
+    /// Yeni bir öğrenci oluşturmak için gereken DTO sınıfı.
+    /// </summary>
     public class StudentCreateDto
     {
         [Required]
@@ -30,6 +36,9 @@ namespace BookManagementAPI.DTOs
         public string StudentNumber { get; set; }
     }
 
+    /// <summary>
+    /// Var olan bir öğrenci kaydını güncellemek için gereken DTO sınıfı.
+    /// </summary>
     public class StudentUpdateDto
     {
         [Required]
@@ -47,6 +56,9 @@ namespace BookManagementAPI.DTOs
         public string StudentNumber { get; set; }
     }
 
+    /// <summary>
+    /// Öğrencinin temel bilgilerini temsil eden DTO sınıfı (daha basit versiyon).
+    /// </summary>
     public class StudentSimpleDto
     {
         public int Id { get; set; }
@@ -54,5 +66,4 @@ namespace BookManagementAPI.DTOs
         public string Surname { get; set; }
         public string StudentNumber { get; set; }
     }
-
 }

@@ -25,8 +25,9 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Tüm ödünç alma kayıtlarını getir
+        /// Tüm ödünç alma kayıtlarını getir.
         /// </summary>
+        /// <returns>Ödünç alma kayıtlarının DTO listesi</returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<EnrollmentDto>>> GetEnrollments()
         {
@@ -35,8 +36,11 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// ID ile ödünç alma kaydı getir
+        /// ID ile ödünç alma kaydını getir.
         /// </summary>
+        /// <param name="id">Ödünç alma kaydının ID'si</param>
+        /// <returns>Ödünç alma kaydının DTO'su</returns>
+        /// <exception cref="KeyNotFoundException">Ödünç alma kaydı bulunamadığında fırlatılır</exception>
         [HttpGet("{id}")]
         public async Task<ActionResult<EnrollmentDto>> GetEnrollment(int id)
         {
@@ -52,8 +56,13 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Ödünç alma kaydını güncelle (kitap iade durumu)
+        /// Ödünç alma kaydını güncelle (kitap iade durumu).
         /// </summary>
+        /// <param name="id">Güncellenecek ödünç alma kaydının ID'si</param>
+        /// <param name="enrollmentDto">Ödünç alma kaydı güncelleme DTO'su</param>
+        /// <returns>Güncelleme işlemine ait HTTP yanıtı</returns>
+        /// <exception cref="KeyNotFoundException">Ödünç alma kaydı bulunamadığında fırlatılır</exception>
+        /// <exception cref="Exception">Diğer genel hatalar için fırlatılır</exception>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEnrollment(int id, EnrollmentUpdateDto enrollmentDto)
         {
@@ -73,8 +82,13 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Yeni ödünç alma kaydı ekle
+        /// Yeni ödünç alma kaydı ekle.
         /// </summary>
+        /// <param name="enrollmentDto">Yeni ödünç alma kaydı DTO'su</param>
+        /// <returns>Yeni ödünç alma kaydının DTO'su</returns>
+        /// <exception cref="KeyNotFoundException">Bağlantılı öğeler bulunamadığında fırlatılır</exception>
+        /// <exception cref="InvalidOperationException">Geçersiz işlem durumu (örneğin, zaten var olan bir kayıt ekleme) için fırlatılır</exception>
+        /// <exception cref="Exception">Genel hata durumları için fırlatılır</exception>
         [HttpPost]
         public async Task<ActionResult<EnrollmentDto>> PostEnrollment(EnrollmentCreateDto enrollmentDto)
         {
@@ -98,8 +112,12 @@ namespace BookManagementAPI.Controllers
         }
 
         /// <summary>
-        /// Ödünç alma kaydını sil
+        /// Ödünç alma kaydını sil.
         /// </summary>
+        /// <param name="id">Silinecek ödünç alma kaydının ID'si</param>
+        /// <returns>Silme işlemine ait HTTP yanıtı</returns>
+        /// <exception cref="KeyNotFoundException">Ödünç alma kaydı bulunamadığında fırlatılır</exception>
+        /// <exception cref="Exception">Genel hata durumları için fırlatılır</exception>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEnrollment(int id)
         {
