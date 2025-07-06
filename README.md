@@ -1,4 +1,4 @@
-# LibraryManagementAPI_ASP.NET-Core
+# LibraryManagementAPI_ASP.NET-Core 
 
 Bu proje, bir kütüphane yönetim sistemi için geliştirilmiş bir RESTful API'dir. API, öğrencilerin kitap ödünç alma işlemlerini, kitaplar, yazarlar, kategoriler ve ödünç alma işlemleri (Enrollment) gibi temel verileri yönetir.
 
